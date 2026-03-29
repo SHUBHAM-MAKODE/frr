@@ -1,0 +1,133 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@foodapp.com",
+      "password": "admin123",
+      "phone": "9999999999",
+      "role": "ADMIN"
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password",
+      "phone": "8888888888",
+      "role": "CUSTOMER"
+    },
+    {
+      "id": 1774779304363,
+      "email": "rest1@gmail.com",
+      "password": "user123",
+      "name": "rest",
+      "phone": "7897897899",
+      "role": "RESTAURANT"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Tasty Bites",
+      "cuisine": "Indian",
+      "rating": 4.5,
+      "isOpen": true,
+      "deliveryTime": 25,
+      "minOrder": 150,
+      "deliveryFee": 30,
+      "image": "https://via.placeholder.com/100",
+      "address": "123 Main St"
+    },
+    {
+      "id": 2,
+      "name": "Sushi Hub",
+      "cuisine": "Japanese",
+      "rating": 4.8,
+      "isOpen": true,
+      "deliveryTime": 30,
+      "minOrder": 200,
+      "deliveryFee": 40,
+      "image": "https://via.placeholder.com/100",
+      "address": "456 Elm St"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": 1,
+      "restaurantId": 1,
+      "name": "Paneer Butter Masala",
+      "category": "Main",
+      "price": 220,
+      "description": "Creamy tomato gravy",
+      "available": true
+    },
+    {
+      "id": 2,
+      "restaurantId": 1,
+      "name": "Vegetable Biryani",
+      "category": "Main",
+      "price": 180,
+      "description": "Aromatic rice and mixed veggies",
+      "available": true
+    },
+    {
+      "id": 3,
+      "restaurantId": 2,
+      "name": "California Roll",
+      "category": "Sushi",
+      "price": 250,
+      "description": "Avocado and crab",
+      "available": true
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 2,
+      "restaurantId": 1,
+      "status": "CONFIRMED",
+      "total": 400,
+      "date": "2025-06-18T10:00:00Z",
+      "items": [
+        {
+          "itemId": 1,
+          "quantity": 1
+        },
+        {
+          "itemId": 2,
+          "quantity": 1
+        }
+      ],
+      "location": {
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "timestamp": "2025-06-18T10:07:00Z"
+      }
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "userId": 2,
+      "items": [
+        {
+          "itemId": 1,
+          "quantity": 2
+        }
+      ]
+    }
+  ],
+  "coupons": [
+    {
+      "id": 1,
+      "code": "SAVE10",
+      "discount": 10,
+      "type": "percentage",
+      "maxUses": 100,
+      "minAmount": 200,
+      "expiryDate": "2026-12-31"
+    }
+  ],
+  "notifications": [],
+  "complaints": []
+}
